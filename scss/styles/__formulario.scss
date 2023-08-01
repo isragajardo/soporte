@@ -1,0 +1,136 @@
+main
+{
+  
+  background: linear-gradient(
+    90deg,
+    rgb(71, 33, 63) 0%,
+    rgb(44, 33, 148) 50%
+  );
+
+}
+main .container
+{
+  font-family: 'Tektur', cursive;
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+form
+{
+  background-color: #f5f5f5;
+  padding: 50px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2) ; /*para dar sombre*/
+}
+form h2
+{
+  font-size: 25px;
+  color: #1e1e1e;
+  text-transform: uppercase; /*para convertir en mayuscula todo o minuscula*/
+  margin-bottom: 35px;
+}
+
+.input-container
+{
+  position: relative;
+}
+
+
+.input-container input
+{
+  padding: 17px 15px 17px 65px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 35px;
+  background-color: transparent;
+  border: 2px solid #cbcbcb;
+  font-size: 16px;
+  outline: none;
+  color: #1e1e1e;
+}
+
+::placeholder /*HACE QUE LAS LETRAS DEL FORMULARIO SE DIFUMINEN*/
+{
+  color:#bdbdbd ;
+  position: absolute;
+  font-size: 20px;
+  top: 4px
+}
+
+form a 
+{
+  display: block;
+  color:#bdbdbd;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 25px;
+
+}
+
+.btn-enviar
+{
+  background: linear-gradient(
+    90deg,
+    rgb(71, 33, 63) 0%,
+    rgb(44, 33, 148) 50%
+  );
+  padding: 15px 80px;
+  border: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 25px;
+  color: #fcfef7;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.success
+{
+  
+  top: 50px;
+  color: green;
+  font-size:18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: $colorprincipal;
+
+}
+.error
+{
+  position: absolute;
+  top: 50px;
+  color: red;
+  font-size: 18px;
+}
+
+@media(max-width:991px)
+{
+  body
+  {
+    padding: 30px;
+  }
+  form
+  {
+    width: 340px;
+  }
+}
+.success h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+  a{
+    text-decoration: none;
+  }
+}
+a h1{
+  text-decoration: none;
+}
+
